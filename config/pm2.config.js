@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: "vms-backend",
-        script: "../server.js",
+        script: "./server.js",
         watch: true,
         env: {
             "NODE_ENV": "development",
