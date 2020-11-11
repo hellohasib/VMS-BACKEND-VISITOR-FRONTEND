@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize');
 const db = {};
-const sequelize = new Sequelize('VmsLoginRegister', 'root', 'root1234', {
+const sequelize = new Sequelize('VmsLoginRegister', 'ubuntu', 'root1234', {
   host: 'localhost',
   dialect: 'mysql',
   operatorsAliases: false,
-
+  timezone: '+06:00',
   pool: {
     max: 5,
     min: 0,
