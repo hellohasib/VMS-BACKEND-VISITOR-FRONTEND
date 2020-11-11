@@ -1,9 +1,7 @@
 const Sequelize = require('sequelize');
 const db = {};
-const sequelize = new Sequelize({
+const sequelize = new Sequelize('ubuntu', 'root1234', {
   host: 'localhost',
-  user: 'ubuntu',
-  password: 'root1234',
   database: 'VmsLoginRegister',
   dialect: 'mysql',
   operatorsAliases: false,
