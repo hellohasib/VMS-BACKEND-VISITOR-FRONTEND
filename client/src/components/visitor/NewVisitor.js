@@ -57,9 +57,9 @@ class NewVisitor extends Component {
       <div className="vertical-center container-fluid mt-5">
         <div className="row">
           <div className="col-md-6 col-sm-12 col-lg-6 col-xs-12 mx-auto">
-            <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h2 mb-3 font-weight-normal" style={{textAlign: "center", fontSize: "32px"}}>VISITOR REGISTRATION</h1>
-              <div className="form-group" style={{fontSize:"xx-large"}}>
+            <form Validate onSubmit={this.onSubmit}>
+              <h1 className="h2 mb-3" style={{textAlign: "center", fontSize: "32px", fontWeight:"bolder"}}>VISITOR REGISTRATION</h1>
+              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
@@ -70,7 +70,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
                 <label htmlFor="email">Email address</label>
                 <input
                   type="email"
@@ -81,7 +81,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
                 <label htmlFor="phone">Phone Number</label>
                 <input
                   type="phone"
@@ -92,7 +92,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
                 <label htmlFor="phone"  >Address</label>
                 <input
                   type="text"
@@ -103,7 +103,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
                 <label htmlFor="phone">Purpose</label>
                 <input
                   type="text"
@@ -116,12 +116,13 @@ class NewVisitor extends Component {
               </div>
               <button
                 type="submit"
-                className="btn btn-lg btn-success btn-block" style={{fontSize:"xxx-large"}}
+                className="btn btn-lg btn-success btn-block" style={{fontSize:"xxx-large", marginTop:"10px"}}
               >
                 Register
               </button>
             </form>
           </div>
+          
         </div>
       </div>
     )
