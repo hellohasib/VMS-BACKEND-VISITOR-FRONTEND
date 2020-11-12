@@ -59,7 +59,7 @@ class NewVisitor extends Component {
           <div className="col-md-6 col-sm-12 col-lg-6 col-xs-12 mx-auto">
             <form Validate onSubmit={this.onSubmit}>
               <h1 className="h2 mb-3" style={{textAlign: "center", fontSize: "32px", fontWeight:"bolder"}}>VISITOR REGISTRATION</h1>
-              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"x-large"}}>
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
@@ -70,7 +70,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"x-large"}}>
                 <label htmlFor="email">Email address</label>
                 <input
                   type="email"
@@ -81,7 +81,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"x-large"}}>
                 <label htmlFor="phone">Phone Number</label>
                 <input
                   type="phone"
@@ -92,8 +92,8 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
-                <label htmlFor="phone"  >Address</label>
+              <div className="form-group-lg" style={{fontSize:"x-large"}}>
+                <label htmlFor="address">Address</label>
                 <input
                   type="text"
                   className="form-control"
@@ -103,7 +103,7 @@ class NewVisitor extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group-lg" style={{fontSize:"xx-large"}}>
+              <div className="form-group-lg" style={{fontSize:"x-large"}}>
                 <label htmlFor="phone">Purpose</label>
                 <input
                   type="text"
