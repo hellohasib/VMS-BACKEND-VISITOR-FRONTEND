@@ -76,7 +76,7 @@ class NewVisitor extends Component {
                   type="email"
                   className="form-control"
                   name="email"
-                  placeholder="Enter email"
+                  placeholder="Enter Vehicle License Number"
                   value={this.state.email}
                   onChange={this.onChange}
                 />
