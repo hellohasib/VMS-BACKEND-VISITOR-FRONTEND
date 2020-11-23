@@ -1,6 +1,9 @@
 const express = require('express')
 const visitors = express.Router()
 const cors = require('cors')
+const { Op } = require("sequelize")
+const moment = require('moment')
+
 
 const Visitor = require('../models/Visitor')
 visitors.use(cors())
@@ -42,6 +45,31 @@ visitors.get('/all_visitors', function(req, res, next) {
       .catch(err => {
         res.send('error: ' + err)
       })
+})
+
+
+visitors.get('/all_visitors/date/:created', function(req, res, next) {
+  const date = req.params.created
+
+  Visitor.findAll({
+    attributes: ["name", "phone", "address", "purpose", "created"]
+  })
+    .then(result => {
+      let selectedVisitor = []
+      for (let i = 0; i< result.length; i++){
+        if(moment(result[i].dataValues.created.split(" ")[0].trim()).format("YYYY-MM-DD") === moment(date).format("YYYY-MM-DD")){
+            selectedVisitor.push(result[i])
+        }
+      }
+      res
+                .status(200)
+                .json({
+                    data: selectedVisitor
+                }) 
+    })
+    .catch(err => {
+      res.send('error: ' + err)
+    })
 })
 
 visitors.get('/all_visitors/:id', function(req, res, next) {

@@ -71,7 +71,7 @@ class NewVisitor extends Component {
                 />
               </div>
               <div className="form-group-lg" style={{fontSize:"x-large"}}>
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Vehicle License</label>
                 <input
                   type="email"
                   className="form-control"
