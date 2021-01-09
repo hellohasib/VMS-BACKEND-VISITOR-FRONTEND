@@ -48,7 +48,7 @@ visitors.get('/all_visitors', function(req, res, next) {
 })
 
 
-visitors.get('/all_visitors/date/:created', function(req, res, next) {
+visitors.post('/all_visitors/date/:created', function(req, res, next) {
   const date = req.params.created
 
   Visitor.findAll({
