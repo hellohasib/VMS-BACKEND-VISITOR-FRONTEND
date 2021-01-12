@@ -47,6 +47,16 @@ visitors.get('/all_visitors', function(req, res, next) {
       })
 })
 
+visitors.get('/all_visitors/count', function(req, res, next) {
+  Visitor.count()
+    .then(c => {
+      res.json(c)
+    })
+    .catch(err => {
+      res.send('error: ' + err)
+    })
+})
+
 
 visitors.post('/all_visitors/date/:created', function(req, res, next) {
   const date = req.params.created
