@@ -49,7 +49,20 @@ class NewVisitor extends Component {
     register(newVisitor).then(res => {
       this.props.history.push(`/thank_you`)
     })
-  }
+    var text = "Thanks " + newVisitor.name + " for visiting BHTPA."
+    var urlText = "http://smpp.ajuratech.com:7788/sendtext?apikey=78c04812eccc01f7&secretkey=582ef419&callerID"+"&toUser="+88+newVisitor.phone+"&messageContent="+text
+    var message = {
+      method: 'get',
+      url: urlText,
+      headers: { }
+    }
+    axios(message).then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+}
 
   render() {
     return (
