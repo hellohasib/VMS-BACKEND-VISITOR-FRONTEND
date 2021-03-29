@@ -5,7 +5,7 @@ export const register = async newVisitor => {
     const response = await axios
       .post('visitors/new_visitor', {
         name: newVisitor.name,
-        email: newVisitor.email,
+        license: newVisitor.license,
         phone: newVisitor.phone,
         address: newVisitor.address,
         purpose: newVisitor.purpose

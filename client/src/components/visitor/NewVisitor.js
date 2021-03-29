@@ -7,7 +7,7 @@ class NewVisitor extends Component {
     super()
     this.state = {
       name: '',
-      email: '',
+      license: '',
       phone: '',
       address: '',
       purpose: '',
