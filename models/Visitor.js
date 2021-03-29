@@ -12,7 +12,7 @@ module.exports = db.sequelize.define(
     name: {
       type: Sequelize.STRING
     },
-    email: {
+    license: {
       type: Sequelize.STRING
     },
     phone: {

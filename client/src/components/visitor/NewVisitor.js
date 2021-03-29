@@ -84,13 +84,13 @@ class NewVisitor extends Component {
                 />
               </div>
               <div className="form-group-lg" style={{fontSize:"x-large"}}>
-                <label htmlFor="email">Vehicle License</label>
+                <label htmlFor="license">Vehicle License</label>
                 <input
-                  type="email"
+                  type="license"
                   className="form-control"
-                  name="email"
+                  name="license"
                   placeholder="Enter Vehicle License Number"
-                  value={this.state.email}
+                  value={this.state.license}
                   onChange={this.onChange}
                 />
               </div>

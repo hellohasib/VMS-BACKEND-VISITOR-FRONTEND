@@ -21,7 +21,7 @@ visitors.post('/new_visitor', (req, res, next) => {
         const today = new Date()
         const visitorData = {
             name: req.body.name,
-            email: req.body.email,
+            license: req.body.license,
             phone: req.body.phone,
             address: req.body.address,
             purpose: req.body.purpose,
@@ -110,7 +110,7 @@ visitors.route('/all_visitors/edit/:id')
         .then(visitor => {
           if (visitor) {
             visitor.name = req.body.name
-            visitor.email = req.body.email
+            visitor.license = req.body.license
             visitor.phone = req.body.phone
             visitor.address = req.body.address
             visitor.purpose = req.body.purpose
