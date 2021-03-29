@@ -40,7 +40,7 @@ class NewVisitor extends Component {
 
     const newVisitor = {
       name: this.state.name,
-      email: this.state.email,
+      license: this.state.license,
       phone: this.state.phone,
       address: this.state.address,
       purpose: this.state.purpose
